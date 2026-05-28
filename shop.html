@@ -200,14 +200,13 @@
       document.getElementById('result-count').textContent = `${filtered.length} Products`;
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
-      renderProducts(PRODUCTS);
-      initDropdowns();
-      initFilterPills('#category-pills', (val) => { activeCategory = val || 'all'; updateGrid(); });
+    renderProducts(PRODUCTS);
+    document.getElementById('result-count').textContent = `${PRODUCTS.length} Products`;
+    initDropdowns();
+    initFilterPills('#category-pills', (val) => { activeCategory = val || 'all'; updateGrid(); });
 
-      document.getElementById('print-type-dropdown')?.addEventListener('dropdown-select', (e) => { activePrintType = e.detail.value; updateGrid(); });
-      document.getElementById('sort-dropdown')?.addEventListener('dropdown-select', (e) => { activeSort = e.detail.value; updateGrid(); });
-    });
+    document.getElementById('print-type-dropdown')?.addEventListener('dropdown-select', (e) => { activePrintType = e.detail.value; updateGrid(); });
+    document.getElementById('sort-dropdown')?.addEventListener('dropdown-select', (e) => { activeSort = e.detail.value; updateGrid(); });
   </script>
 </body>
 </html>

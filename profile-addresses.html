@@ -36,8 +36,9 @@
   <script type="module">
     import { isLoggedIn, openAuthModal } from '/js/auth.js';
     const ADDRESSES = await fetch('/data/addresses.json').then(r => r.json());
-    document.addEventListener('DOMContentLoaded', () => {
-      if (!isLoggedIn()) { openAuthModal(() => location.reload()); return; }
+    if (!isLoggedIn()) {
+      openAuthModal(() => location.reload());
+    } else {
       const list = document.getElementById('address-list');
       if (list) {
         list.innerHTML = ADDRESSES.map(a => `
@@ -48,7 +49,7 @@
           </div>
         `).join('');
       }
-    });
+    }
   </script>
 </body>
 </html>
