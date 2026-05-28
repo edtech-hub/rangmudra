@@ -25,6 +25,7 @@ async function initComponents() {
   const { initCountryCodes } = await import('./country-codes.js');
   const { initOTPInput } = await import('./otp-input.js');
   const { initReveal } = await import('./reveal.js');
+  const { initDummyImages } = await import('./dummy-images.js');
 
   initMobileMenu();
   initCountryCodes();
@@ -34,6 +35,7 @@ async function initComponents() {
   highlightActiveNavLink();
   initScrollHeader();
   initReveal();
+  initDummyImages();
 }
 
 function highlightActiveNavLink() {
