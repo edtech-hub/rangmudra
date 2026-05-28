@@ -17,7 +17,7 @@
     "priceUnit": "per person",
     "seatsBooked": 12,
     "totalSeats": 14,
-    "image": "/images/workshops/block-print-party.jpg"
+    "image": "/images/workshops/block-print-party.svg"
   },
   {
     "id": "eco-print-workshop",
@@ -37,7 +37,7 @@
     "priceLabel": "Contact for pricing",
     "seatsBooked": 6,
     "totalSeats": 8,
-    "image": "/images/workshops/eco-print.jpg"
+    "image": "/images/workshops/eco-print.svg"
   },
   {
     "id": "block-printing-workshop",
@@ -56,7 +56,7 @@
     "priceLabel": "Contact for pricing",
     "seatsBooked": 0,
     "totalSeats": 25,
-    "image": "/images/workshops/corporate-block.jpg",
+    "image": "/images/workshops/corporate-block.svg",
     "includes": [
       "Guided Step-By-Step Instruction By Experienced Facilitators",
       "All Materials And Tools Provided",
@@ -93,7 +93,7 @@
     "priceUnit": "per child",
     "seatsBooked": 8,
     "totalSeats": 12,
-    "image": "/images/workshops/children.jpg"
+    "image": "/images/workshops/children.svg"
   },
   {
     "id": "curated-textile-course",
@@ -114,6 +114,6 @@
     "priceUnit": "per participant",
     "seatsBooked": 4,
     "totalSeats": 6,
-    "image": "/images/workshops/curated-course.jpg"
+    "image": "/images/workshops/curated-course.svg"
   }
 ]

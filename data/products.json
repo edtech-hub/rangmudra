@@ -17,9 +17,9 @@
     "featured": true,
     "available": true,
     "images": [
-      "/images/products/ajrakh-corset-1.jpg",
-      "/images/products/ajrakh-corset-2.jpg",
-      "/images/products/ajrakh-corset-3.jpg"
+      "/images/products/ajrakh-corset-1.svg",
+      "/images/products/ajrakh-corset-2.svg",
+      "/images/products/ajrakh-corset-3.svg"
     ],
     "description": "Carefully block printed Ajrakh corset crafted on natural cotton fabric. Features traditional geometric patterns hand-stamped with carved wooden blocks dipped in natural indigo dye.",
     "features": [
@@ -49,8 +49,8 @@
     "featured": true,
     "available": true,
     "images": [
-      "/images/products/flora-set-1.jpg",
-      "/images/products/flora-set-2.jpg"
+      "/images/products/flora-set-1.svg",
+      "/images/products/flora-set-2.svg"
     ],
     "description": "Carefully block printed 3 piece clothing to enhance your everyday mood.",
     "features": [
@@ -81,7 +81,7 @@
     "featured": false,
     "available": true,
     "images": [
-      "/images/products/shiro-shirt-1.jpg"
+      "/images/products/shiro-shirt-1.svg"
     ],
     "description": "A refined block-printed shirt featuring delicate geometric patterns. Made from breathable natural cotton.",
     "features": [
@@ -110,7 +110,7 @@
     "featured": true,
     "available": true,
     "images": [
-      "/images/products/eco-dupatta-1.jpg"
+      "/images/products/eco-dupatta-1.svg"
     ],
     "description": "Each eco-printed dupatta is unique — natural leaves and flowers are pressed onto the fabric to create one-of-a-kind botanical prints.",
     "features": [
@@ -139,7 +139,7 @@
     "featured": false,
     "available": true,
     "images": [
-      "/images/products/runner-1.jpg"
+      "/images/products/runner-1.svg"
     ],
     "description": "A handcrafted table runner featuring traditional Rangmudra block-print motifs. Brings artisanal heritage to your everyday spaces.",
     "features": [
@@ -168,7 +168,7 @@
     "featured": true,
     "available": true,
     "images": [
-      "/images/products/indigo-saree-1.jpg"
+      "/images/products/indigo-saree-1.svg"
     ],
     "description": "A 6.5-yard hand block-printed saree featuring intricate botanical motifs in deep indigo on natural cotton. Each yard tells a story of centuries-old craft.",
     "features": [

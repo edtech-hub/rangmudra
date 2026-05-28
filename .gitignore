@@ -1,7 +1,10 @@
 node_modules/
 .env
 .DS_Store
-images/uploads/*
-!images/uploads/.gitkeep
 claude.md
 admin/
+server.js
+db.js
+package.json
+package-lock.json
+.env.example

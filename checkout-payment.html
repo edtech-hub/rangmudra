@@ -144,7 +144,7 @@
       if (preview) {
         preview.innerHTML = cart.map(item => `
           <div style="display:flex;gap:16px;align-items:center;">
-            <img src="${item.image || '/images/products/placeholder.jpg'}" alt="${item.name}" style="width:60px;height:60px;object-fit:cover;border-radius:8px;" loading="lazy" width="60" height="60">
+            <img src="${item.image || '/images/products/placeholder.svg'}" alt="${item.name}" style="width:60px;height:60px;object-fit:cover;border-radius:8px;" loading="lazy" width="60" height="60">
             <div style="flex:1;">
               <p class="h5-a color-sc-100">${item.name}</p>
               <p class="h6-a color-sc-l3" style="text-transform:uppercase;">Size: ${item.size}</p>

@@ -1,37 +1,37 @@
 {
   "homepage": {
-    "hero": "/images/workshops/corporate-block.jpg",
-    "introduction": "/images/textures/process-1.jpg",
-    "workshops-promo": "/images/workshops/block-print-party.jpg",
-    "shop-promo": "/images/products/indigo-saree-1.jpg",
-    "testimonials": "/images/workshops/eco-print.jpg",
-    "gallery": "/images/workshops/curated-course.jpg",
-    "quick-reads-large": "/images/workshops/block-print-party.jpg",
-    "quick-reads-1": "/images/textures/process-2.jpg",
-    "quick-reads-2": "/images/textures/process-3.jpg",
-    "quick-reads-3": "/images/textures/process-1.jpg"
+    "hero": "/images/workshops/corporate-block.svg",
+    "introduction": "/images/textures/process-1.svg",
+    "workshops-promo": "/images/workshops/block-print-party.svg",
+    "shop-promo": "/images/products/indigo-saree-1.svg",
+    "testimonials": "/images/workshops/eco-print.svg",
+    "gallery": "/images/workshops/curated-course.svg",
+    "quick-reads-large": "/images/workshops/block-print-party.svg",
+    "quick-reads-1": "/images/textures/process-2.svg",
+    "quick-reads-2": "/images/textures/process-3.svg",
+    "quick-reads-3": "/images/textures/process-1.svg"
   },
   "about": {
-    "hero": "/images/textures/process-1.jpg",
-    "story": "/images/workshops/block-print-party.jpg",
-    "sustainability": "/images/textures/process-2.jpg",
-    "team-hero": "/images/workshops/eco-print.jpg",
-    "team-secondary": "/images/workshops/curated-course.jpg",
-    "faq-decor": "/images/textures/process-1.jpg"
+    "hero": "/images/textures/process-1.svg",
+    "story": "/images/workshops/block-print-party.svg",
+    "sustainability": "/images/textures/process-2.svg",
+    "team-hero": "/images/workshops/eco-print.svg",
+    "team-secondary": "/images/workshops/curated-course.svg",
+    "faq-decor": "/images/textures/process-1.svg"
   },
   "workshops": {
-    "hero": "/images/workshops/corporate-block.jpg",
-    "category-experience": "/images/workshops/eco-print.jpg",
-    "category-corporate": "/images/workshops/corporate-block.jpg",
-    "category-curated": "/images/workshops/curated-course.jpg"
+    "hero": "/images/workshops/corporate-block.svg",
+    "category-experience": "/images/workshops/eco-print.svg",
+    "category-corporate": "/images/workshops/corporate-block.svg",
+    "category-curated": "/images/workshops/curated-course.svg"
   },
   "shop": {
-    "hero": "/images/workshops/corporate-block.jpg"
+    "hero": "/images/workshops/corporate-block.svg"
   },
   "enquire": {
-    "hero": "/images/workshops/block-print-party.jpg",
-    "carousel-1": "/images/workshops/corporate-block.jpg",
-    "carousel-2": "/images/workshops/eco-print.jpg",
-    "carousel-3": "/images/workshops/curated-course.jpg"
+    "hero": "/images/workshops/block-print-party.svg",
+    "carousel-1": "/images/workshops/corporate-block.svg",
+    "carousel-2": "/images/workshops/eco-print.svg",
+    "carousel-3": "/images/workshops/curated-course.svg"
   }
 }
