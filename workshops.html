@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshops &amp; Experience — Rangmudra</title>
+  <meta name="description" content="Hands-on block printing and eco printing workshops for individuals, corporates, and curated learners.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Archivo:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body style="background:var(--pr-l5);">
+
+  <div data-partial="header"></div>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="workshops-hero" aria-label="Workshops hero">
+      <img
+        data-section="workshops.hero"
+        src="/images/workshops/corporate-block.jpg"
+        alt="Close-up of carved wooden block printing stamps with citrus-slice patterns"
+        class="workshops-hero__bg"
+        loading="eager"
+        fetchpriority="high"
+        width="1440" height="720"
+      >
+      <div class="workshops-hero__overlay" aria-hidden="true"></div>
+
+      <a href="index.html" class="btn-ghost" style="position:absolute;top:24px;left:48px;z-index:3;">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+        Back
+      </a>
+
+      <div class="workshops-hero__content">
+        <p class="h6-a" style="text-transform:uppercase;color:var(--pr-l5);margin-bottom:16px;letter-spacing:0.15em;">EXPLORE</p>
+        <h1 class="h2-i" style="color:var(--pr-l5);font-size:clamp(40px,5vw,80px);line-height:1.1;">Workshops &amp;<br>Experience</h1>
+      </div>
+    </section>
+
+    <!-- Search toolbar -->
+    <section style="background:var(--pr-l5);padding:32px 0 0;">
+      <div class="container">
+        <div class="workshops-toolbar">
+          <p class="h6-a color-sc-l3" style="text-transform:uppercase;">Workshops</p>
+          <input
+            type="search"
+            class="workshops-search"
+            id="workshop-search"
+            placeholder="Search workshops..."
+            aria-label="Search workshops"
+          >
+          <button class="btn-primary" style="white-space:nowrap;display:flex;align-items:center;gap:8px;" aria-label="Filter by category">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"/><line x1="8" x2="16" y1="12" y2="12"/><line x1="11" x2="13" y1="18" y2="18"/></svg>
+            WORKSHOP CATEGORIES
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category grid -->
+    <section style="background:var(--pr-l5);padding-bottom:var(--section-v-desktop);">
+      <div class="category-grid" style="max-width:var(--max-content);margin:0 auto;">
+
+        <a href="workshop-category.html?cat=experience" class="category-card" aria-label="Experience Workshops">
+          <img
+            data-section="workshops.category-experience"
+            src="/images/workshops/eco-print.jpg"
+            alt="Hands-on experience workshop — participants printing on fabric"
+            class="category-card__image"
+            loading="lazy"
+            width="480" height="600"
+          >
+          <div class="category-card__scrim" aria-hidden="true"></div>
+          <div class="category-card__content">
+            <h2 class="category-card__title">Experience<br>Workshops</h2>
+            <p class="category-card__desc">Experience the art of block printing and eco printing through hands-on workshops that blend creativity, craftsmanship, and nature-inspired design.</p>
+          </div>
+        </a>
+
+        <a href="workshop-category.html?cat=corporate" class="category-card" aria-label="Corporate Workshops">
+          <img
+            data-section="workshops.category-corporate"
+            src="/images/workshops/corporate-block.jpg"
+            alt="Corporate team participating in block printing workshop"
+            class="category-card__image"
+            loading="lazy"
+            width="480" height="600"
+          >
+          <div class="category-card__scrim" aria-hidden="true"></div>
+          <div class="category-card__content">
+            <h2 class="category-card__title">Corporate<br>Workshops</h2>
+            <p class="category-card__desc">Transform your workplace into a space of creativity, collaboration, and meaningful team experiences through engaging hands-on corporate workshops.</p>
+          </div>
+        </a>
+
+        <a href="workshop-category.html?cat=curated" class="category-card" aria-label="Curated Workshops">
+          <img
+            data-section="workshops.category-curated"
+            src="/images/workshops/curated-course.jpg"
+            alt="Curated workshop — design students working with textile patterns"
+            class="category-card__image"
+            loading="lazy"
+            width="480" height="600"
+          >
+          <div class="category-card__scrim" aria-hidden="true"></div>
+          <div class="category-card__content">
+            <h2 class="category-card__title">Curated<br>Workshops</h2>
+            <p class="category-card__desc">Immersive multi-week workshops crafted for design students and creative learners to explore, experiment, and build hands-on artistic skills through guided practice.</p>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div data-partial="footer"></div>
+  <div data-partial="auth-modal"></div>
+
+  <script type="module" src="/js/components.js"></script>
+  <script type="module" src="/js/sections.js"></script>
+  <script type="module">
+    import { initCategoryCards } from '/js/category-card.js';
+    document.addEventListener('DOMContentLoaded', () => {
+      initCategoryCards();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Orders — Rangmudra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Archivo:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body>
+  <div data-partial="header"></div>
+  <main class="profile-page">
+    <div class="container" style="max-width:800px;">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:40px;">
+        <a href="profile.html" class="btn-ghost">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+          Profile
+        </a>
+        <h1 class="h3-i color-sc-100">My Orders</h1>
+      </div>
+      <div style="text-align:center;padding:80px 0;">
+        <p class="h4-i color-sc-l3" style="margin-bottom:24px;">No orders yet</p>
+        <a href="shop.html" class="btn-primary">Start Shopping</a>
+      </div>
+    </div>
+  </main>
+  <div data-partial="footer"></div>
+  <div data-partial="auth-modal"></div>
+  <script type="module" src="/js/components.js"></script>
+  <script type="module">
+    import { isLoggedIn, openAuthModal } from '/js/auth.js';
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!isLoggedIn()) { openAuthModal(() => location.reload()); }
+    });
+  </script>
+</body>
+</html>
