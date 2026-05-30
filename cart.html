@@ -16,6 +16,8 @@
 
   <div data-partial="header"></div>
 
+  <div class="breadcrumb-wrap"><nav data-breadcrumb></nav></div>
+
   <div class="checkout-grid container">
 
     <!-- Left column -->
@@ -155,7 +157,7 @@
       list.innerHTML = cart.map(item => `
         <div class="cart-item" data-id="${item.id}" data-size="${item.size}">
           <img
-            src="${item.image || '/images/products/placeholder.svg'}"
+            src="${item.image || '/images/uploads/prod-ajrakh-corset-1.jpg'}"
             alt="${item.name}"
             class="cart-item__image"
             loading="lazy"

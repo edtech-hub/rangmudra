@@ -1,6 +1,6 @@
 /* filter-pills.js — Shop filter pill active-state toggling */
 
-export function initFilterPills(containerSelector, onChange) {
+export function initFilterPills(containerSelector, onChange, datasetKey = 'filter') {
   const container = document.querySelector(containerSelector);
   if (!container) return;
 
@@ -17,7 +17,7 @@ export function initFilterPills(containerSelector, onChange) {
       if (!wasActive) pill.classList.add('active');
 
       const active = container.querySelector('.filter-pill.active');
-      const value = active ? (active.dataset.filter || active.textContent.trim()) : null;
+      const value = active ? (active.dataset[datasetKey] || active.textContent.trim()) : null;
       if (onChange) onChange(value);
     });
   });

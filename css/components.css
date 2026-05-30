@@ -531,7 +531,7 @@
 
 .shop-card__img-wrap {
   position: relative;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   transition: transform var(--dur-micro) var(--ease-standard),
               box-shadow var(--dur-micro) var(--ease-standard);
@@ -627,7 +627,7 @@
 
 .workshop-card__img-wrap {
   position: relative;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 5 / 4;
   overflow: hidden;
 }
 
@@ -1838,6 +1838,44 @@
 .breadcrumb a:hover { color: var(--sc-100); }
 .breadcrumb__sep { color: var(--sc-l4x); }
 
+/* Site-wide breadcrumb wrap — sits just under the fixed header on every page.
+   margin-top compensates for the fixed header height so it isn't painted over.
+   Uses pr-l3 (a touch deeper than the page background) so the band reads as a
+   distinct surface even on cream-bg pages. */
+.breadcrumb-wrap {
+  background: var(--pr-l3);
+  padding: 18px 0;
+  margin-top: 88px;
+  border-bottom: 1px solid rgba(44, 26, 16, 0.12);
+  position: relative;
+  z-index: 2;
+  min-height: 56px;
+}
+.breadcrumb-wrap .breadcrumb {
+  font-size: 13px;
+  color: var(--sc-100);
+}
+.breadcrumb-wrap .breadcrumb a { color: var(--sc-l1); text-decoration: none; }
+.breadcrumb-wrap .breadcrumb a:hover { color: var(--sc-100); text-decoration: underline; }
+.breadcrumb-wrap .breadcrumb__sep { color: var(--sc-l3); }
+.breadcrumb-wrap .breadcrumb {
+  max-width: var(--max-content);
+  margin: 0 auto;
+  padding-inline: var(--gutter-desktop, 48px);
+  flex-wrap: wrap;
+}
+/* Pages whose <main> already accounted for the fixed header should not
+   double-count the offset once a breadcrumb-wrap is present above. */
+.breadcrumb-wrap + main { padding-top: 0 !important; }
+
+@media (max-width: 1023px) {
+  .breadcrumb-wrap .breadcrumb { padding-inline: 32px; }
+}
+@media (max-width: 767px) {
+  .breadcrumb-wrap { margin-top: 64px; padding: 14px 0; }
+  .breadcrumb-wrap .breadcrumb { padding-inline: 20px; font-size: 11px; }
+}
+
 /* ─── Section eyebrow ────────────────────────────────────────────────────── */
 
 .eyebrow {
@@ -2256,7 +2294,11 @@
 .color-pr-l5  { color: var(--pr-l5); }
 
 .bg-cream      { background: var(--pr-l5); }
-.bg-chocolate  { background: var(--sc-100); }
+/* Section differentiation: a slightly deeper cream tone for alternating bands.
+   Class name kept for backwards compatibility — no longer chocolate. */
+.bg-chocolate  { background: var(--pr-l3); color: var(--sc-100); }
+.bg-chocolate .testimonials-eyebrow,
+.bg-chocolate .testimonial-quote { color: var(--sc-100); }
 .bg-sand       { background: var(--pr-l2); }
 
 .mt-8  { margin-top: 8px; }

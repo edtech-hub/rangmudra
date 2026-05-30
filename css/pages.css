@@ -249,8 +249,11 @@
 
 .blog-card {
   position: relative;
+  display: block;
   overflow: hidden;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 .blog-card__image {
@@ -793,23 +796,25 @@
 
 .workshops-search::placeholder { color: var(--sc-l3); }
 
-/* Zigzag workshop cards */
+/* Workshop cards — inline grid (no alternating zigzag) */
 .workshop-zigzag {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 48px;
+  align-items: start;
 }
 
 .workshop-zigzag__item {
-  width: 520px;
+  width: 100%;
 }
 
-.workshop-zigzag__item:nth-child(odd)  { align-self: flex-start; }
-.workshop-zigzag__item:nth-child(even) { align-self: flex-end; margin-top: -80px; }
+@media (max-width: 1023px) {
+  .workshop-zigzag { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+}
 
 @media (max-width: 767px) {
+  .workshop-zigzag { grid-template-columns: 1fr; gap: 32px; }
   .workshop-zigzag__item { width: 100%; }
-  .workshop-zigzag__item:nth-child(even) { margin-top: 0; align-self: flex-start; }
 }
 
 /* ─── Enquire page ────────────────────────────────────────────────────────── */

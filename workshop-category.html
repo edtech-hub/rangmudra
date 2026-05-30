@@ -16,12 +16,14 @@
 
   <div data-partial="header"></div>
 
+  <div class="breadcrumb-wrap"><nav data-breadcrumb></nav></div>
+
   <main>
 
     <!-- Small hero -->
     <section class="page-hero" style="min-height:320px;" aria-label="Category hero">
       <img
-        src="/images/workshops/block-print-party.svg"
+        src="/images/uploads/wshop-block-print-party.jpg"
         alt="Block printing workshop in progress"
         class="page-hero__bg"
         loading="eager"
@@ -39,15 +41,6 @@
 
     <section class="section">
       <div class="container">
-
-        <!-- Breadcrumb -->
-        <nav class="breadcrumb" style="margin-bottom:32px;" aria-label="Breadcrumb">
-          <a href="index.html">Home</a>
-          <span class="breadcrumb__sep">›</span>
-          <a href="workshops.html">Workshops</a>
-          <span class="breadcrumb__sep">›</span>
-          <span id="breadcrumb-category" aria-current="page">Category</span>
-        </nav>
 
         <!-- Toolbar -->
         <div class="workshops-toolbar" style="margin-bottom:40px;">
@@ -148,7 +141,6 @@
 
     document.title = `${meta.title} — Rangmudra`;
     document.getElementById('hero-title').textContent = meta.title;
-    document.getElementById('breadcrumb-category').textContent = meta.title;
     document.getElementById('category-heading').textContent = meta.title;
     document.getElementById('category-desc').textContent = meta.desc;
     document.getElementById('category-pill').textContent = meta.title.toUpperCase();
@@ -175,7 +167,7 @@
                 class="workshop-card__image"
                 loading="lazy"
                 width="520" height="650"
-                onerror="this.src='/images/workshops/block-print-party.svg'"
+                onerror="this.src='/images/uploads/wshop-block-print-party.jpg'"
               >
               <span class="workshop-card__level-tag">${w.level}</span>
             </div>
